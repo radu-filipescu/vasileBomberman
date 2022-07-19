@@ -6,6 +6,7 @@ import { BackgroundComponent } from './background/background.component';
 import { TileWallComponent } from './background/tiles/tile-wall/tile-wall.component';
 import { TileEmptyComponent } from './background/tiles/tile-empty/tile-empty.component';
 import { PlayerComponent } from './player/player.component';
+import { TileFoodComponent } from './background/tiles/tile-food/tile-food.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PlayerComponent } from './player/player.component';
     BackgroundComponent,
     TileWallComponent,
     TileEmptyComponent,
-    PlayerComponent
+    PlayerComponent,
+    TileFoodComponent
   ],
   imports: [
     BrowserModule

@@ -4,6 +4,7 @@
       <app-tile-wall *ngIf="table[i][j] === 1"></app-tile-wall>
       <app-tile-empty *ngIf="table[i][j] === 0"></app-tile-empty>
       <app-player *ngIf="table[i][j] === -1"></app-player>
+      <app-tile-food *ngIf="table[i][j] === 2"></app-tile-food>
     </div>
   </div>
 
