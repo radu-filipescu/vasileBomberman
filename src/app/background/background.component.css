@@ -1,0 +1,17 @@
+#bkg {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  padding-top: 6vh;
+  padding-left: 10vh;
+}
+
+.line {
+  display: block;
+}
+
+.single-tile {
+  display: inline;
+  height: 1vh;
+  width: 1vh;
+}

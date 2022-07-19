@@ -1,0 +1,10 @@
+<div id="bkg">
+  <div class="line" *ngFor="let l of table; let i = index">
+    <div class="single-tile" *ngFor="let sq of table[i]; let j = index">
+      <app-tile-wall *ngIf="table[i][j] === 1"></app-tile-wall>
+      <app-tile-empty *ngIf="table[i][j] === 0"></app-tile-empty>
+      <app-player *ngIf="table[i][j] === -1"></app-player>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+#tile {
+  width: 2vw;
+  height: 2vw;
+  display: inline;
+  float: left;
+  border: 2px solid black;
+}

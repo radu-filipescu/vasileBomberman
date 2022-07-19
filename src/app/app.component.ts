@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
+import {GlobalService} from "./global/global.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vasile';
+
+  constructor(private globalService: GlobalService) {
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  onKeydown(event: any) {
+    this.globalService.keyPressEvent.emit(event.key);
+  }
 }
